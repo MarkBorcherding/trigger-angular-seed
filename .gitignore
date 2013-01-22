@@ -1,0 +1,14 @@
+# NodeJS Ignores
+node_modules
+
+# Compass / SASS Ignores
+.sass-cache
+
+# TriggerIO Ignores
+.lib
+.template
+development
+release
+local_config.json
+forge-error.log
+src/identity.json
