@@ -1,43 +1,29 @@
-<!DOCTYPE html>
-<html>
-	<head>
-	<title>Hello World!</title>
-	<link rel="stylesheet" href="css/jquery.mobile-1.1.0.min.css" />
-	<script src="js/jquery-1.7.1.min.js"></script>
-	<script src="js/jquery.mobile-1.1.0.min.js"></script>
-	<script type="text/javascript" src="js/main.js"></script>
+<!doctype html>
+<html lang="en" ng-app="myApp">
+<head>
+  <meta charset="utf-8">
+  <title>My AngularJS App</title>
+  <link rel="stylesheet" href="css/app.css"/>
 </head>
 <body>
+  <ul class="menu">
+    <li><a href="#/view1">view1</a></li>
+    <li><a href="#/view2">view2</a></li>
+  </ul>
 
-<div data-role="page">
+  <div ng-view></div>
 
-	<div data-role="header">
-		<h1>Hello World!</h1>
-	</div><!-- /header -->
+  <div>Angular seed app: v<span app-version></span></div>
 
-	<div data-role="content">
-		<p>Congratulations on installing Forge!</p>
-		<p>This is an example project built with simple HTML, CSS and JavaScript.</p>
-		
-		<h3>Getting started</h3>
-
-		<p>If you're here, you've probably already seen <a href="http://current-docs.trigger.io/">the Forge documentation</a>.</p>
-		<p>Keep an eye on our <a href="https://trigger.io/cross-platform-application-development-blog/">blog</a> which has regular developer tips and news.</p>
-
-		<h3>Next steps</h3>
-
-		<p>You could try going through <a href="http://current-docs.trigger.io/tutorials/weather/index.html">a tutorial</a>, or looking at <a href="http://current-docs.trigger.io/modules/index.html">available modules</a>.</p>
-		<p>If you have any questions, you can use <a href="http://stackoverflow.com/questions/tagged/trigger.io">StackOverflow</a> or <a href="mailto:support@trigger.io">send us an email</a>.</p>
-
-	</div><!-- /content -->
-
-	<div data-role="footer">
-		<h4>Get in touch:
-			<a href="mailto:support@trigger.io">support@trigger.io</a>
-		</h4>
-	</div><!-- /footer -->
-
-</div><!-- /page -->
-
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular.min.js"></script>
+  -->
+  <script src="js/vendor/zepto.js"></script>
+  <script src="js/vendor/angular.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/services.js"></script>
+  <script src="js/controllers.js"></script>
+  <script src="js/filters.js"></script>
+  <script src="js/directives.js"></script>
 </body>
 </html>

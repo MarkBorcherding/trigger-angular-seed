@@ -1,0 +1,30 @@
+/* app css stylesheet */
+/* line 3, /Users/markborcherding/source/MarkBorcherding/trigger-angular-seed/app/css/app.scss */
+body .menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+/* line 10, /Users/markborcherding/source/MarkBorcherding/trigger-angular-seed/app/css/app.scss */
+body .menu:before {
+  content: "[";
+}
+/* line 14, /Users/markborcherding/source/MarkBorcherding/trigger-angular-seed/app/css/app.scss */
+body .menu:after {
+  content: "]";
+}
+/* line 18, /Users/markborcherding/source/MarkBorcherding/trigger-angular-seed/app/css/app.scss */
+body .menu > li {
+  display: inline;
+}
+/* line 22, /Users/markborcherding/source/MarkBorcherding/trigger-angular-seed/app/css/app.scss */
+body .menu > li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+/* line 27, /Users/markborcherding/source/MarkBorcherding/trigger-angular-seed/app/css/app.scss */
+body .menu > li:nth-child(1):before {
+  content: "";
+  padding: 0;
+}
