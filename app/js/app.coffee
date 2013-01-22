@@ -1,4 +1,4 @@
-angular.module('myApp', ['myApp.controllers', 'myApp.filters', 'myApp.services', 'myApp.directives'])
+angular.module('myApp', ['myApp.config', 'myApp.controllers', 'myApp.filters', 'myApp.services', 'myApp.directives'])
   .config( ['$routeProvider', ($routeProvider) ->
 
     $routeProvider.when '/view1',

@@ -6,7 +6,9 @@
 
   controller = controllers.controller;
 
-  controller('MyCtrl1', function() {});
+  controller('MyCtrl1', function(forge, config) {
+    return forge.logging.log('some_url', config.some_url);
+  });
 
   controller('MyCtrl2', function() {});
 
