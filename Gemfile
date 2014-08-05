@@ -5,7 +5,7 @@ source "https://rubygems.org"
 # gem 'angular-tasks', :git => 'git@github.com:MarkBorcherding/angular-tasks.git'
 gem 'angular-tasks', :path => '../angular-tasks/'
 
-# gem 'angular-tasks', :git => 'git@github.com:MarkBorcherding/angular-tasks.git'
+# gem 'trigger-tasks', :git => 'git@github.com:MarkBorcherding/trigger-tasks.git'
 gem 'trigger-tasks', :path => '../trigger-tasks/'
 
 gem 'compass'
